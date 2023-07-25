@@ -8,22 +8,22 @@ import { useAuth } from '../../utils/context/authContext';
 import { createMember, updateMember } from '../../api/memberData';
 
 const initialState = {
-  first_name: '',
-  last_name: '',
+  firstName: '',
+  lastName: '',
   image: '',
   role: '',
 };
 
-export default function MemberForm({ memberObj }) {
+export default function MemberForm({ obj }) {
   const [formInput, setFormInput] = useState(initialState);
   const router = useRouter();
   const { user } = useAuth();
 
   useEffect(() => {
-    if (memberObj.firebaseKey) {
-      setFormInput(memberObj);
+    if (obj.firebaseKey) {
+      setFormInput(obj);
     }
-  }, [memberObj, user]);
+  }, [obj, user]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -35,9 +35,9 @@ export default function MemberForm({ memberObj }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (memberObj.firebaseKey) {
+    if (obj.firebaseKey) {
       updateMember(formInput)
-        .then(() => router.push(`/newMember/${memberObj.firebaseKey}`));
+        .then(() => router.push('/team'));
     } else {
       const payload = { ...formInput, uid: user.uid };
       createMember(payload).then(({ name }) => {
@@ -52,7 +52,7 @@ export default function MemberForm({ memberObj }) {
 
   return (
     <Form onSubmit={handleSubmit}>
-      <h2 className="text-white mt-5">{memberObj.firebaseKey ? 'Update' : 'Create'} Member</h2>
+      <h2 className="text-white mt-5">{obj.firebaseKey ? 'Update' : 'Create'} Member</h2>
 
       {/* First name INPUT  */}
       <FloatingLabel controlId="floatingInput1" label="First Name" className="mb-3">
@@ -103,13 +103,13 @@ export default function MemberForm({ memberObj }) {
       </FloatingLabel>
 
       {/* SUBMIT BUTTON  */}
-      <Button type="submit">{memberObj.firebaseKey ? 'Update' : 'Create'} Member</Button>
+      <Button type="submit">{obj.firebaseKey ? 'Update' : 'Create'} Member</Button>
     </Form>
   );
 }
 
 MemberForm.propTypes = {
-  memberObj: PropTypes.shape({
+  obj: PropTypes.shape({
     firstName: PropTypes.string,
     lastName: PropTypes.string,
     image: PropTypes.string,
@@ -117,5 +117,5 @@ MemberForm.propTypes = {
   }),
 };
 MemberForm.defaultProps = {
-  memberObj: initialState,
+  obj: initialState,
 };
