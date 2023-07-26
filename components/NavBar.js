@@ -5,6 +5,7 @@ import {
   Navbar, Container, Nav,
 } from 'react-bootstrap';
 import SignOut from './SignOut';
+import SearchBar from './Search';
 
 export default function NavBar() {
   return (
@@ -26,6 +27,7 @@ export default function NavBar() {
             <Link passHref href="/members/newMember">
               <Nav.Link>Add Member</Nav.Link>
             </Link>
+            <SearchBar />
             <SignOut />
           </Nav>
         </Navbar.Collapse>
