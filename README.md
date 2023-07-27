@@ -1,80 +1,27 @@
-# React/Next.js Template
+# Team Roster [![Netlify Status](https://api.netlify.com/api/v1/badges/b2698ea5-a5df-4b71-bacd-6cf13f83ffd2/deploy-status)](https://app.netlify.com/sites/team-roster-marcelcao/deploys)
 
-[See Live Demo of this Template](https://drt-next-js-template.netlify.app/)
+<i>Team Roster</i> is an app which lets you create, read, update and delete personalized team organizations with associated team organization members
 
-## [Team Roster Instructions](./INSTRUCTIONS.md)
+## About the User 
+- This application is perfect for any organization looking for a management system for their team members.
 
-## Topics
-- [Get Started](#get-started)
-- [Starting the Project](#starting-the-project)
-- [Using axios](#using-axios)
-- [Deploying on Netlify](#deploying-on-netlify)
-___
-## Getting Started
-### Use Template
-#### 1. To get started, click the GREEN "Use this Template" button at the top of the repo
-<img width="915" alt="Screen Shot 2022-07-06 at 12 54 01 PM" src="https://user-images.githubusercontent.com/29741570/177612998-4aac9237-5a1e-4f13-8ae0-468587521564.png">
-
-#### 2. Make sure YOUR github account is selected in the dropdown and name your project
-<img width="763" alt="Screen Shot 2022-07-06 at 12 54 48 PM" src="https://user-images.githubusercontent.com/29741570/177613126-dd38f678-7553-4f27-8a4a-75680f14d71e.png">
-
-#### 3. Clone your new repo to your local machine
-#### 4. Go to the **NEXT** section
-
-## Starting the Project
-1. Create a Firebase project and set up authentication. Use [these videos](https://vimeo.com/showcase/codetracker-firebase) as a refresher if needed.
-1. Create a `.env` file at the root of the project
-1. Copy/Paste the contents of the `.env.sample` file to your newly created `.env` file.
-1. Copy over all of your Firebase values into the `.env` file.
-1. Open the `package.json` file and change the `name` property to the name of your application, and `author` to  your name.
-1. From your command line, be in the root directory and run `npm install` OR `npm i` for short.
-1. Next, run `npm run prepare`. This command sets up husky to track eslint errors on commit that will make your deploy fail on Netlify.
-1. To start your application, run `npm run dev`. THIS IS THE COMMAND YOU WILL USE TO RUN YOUR DEVELOPMENT SERVER FROM NOW ON.
-1. Open [http://localhost:3000](http://localhost:3000) with your browser.
-
-### If you see this, you are set to go!
-<img width="450" alt="Screen Shot 2022-07-06 at 1 07 27 PM" src="https://user-images.githubusercontent.com/29741570/177615077-9b6a75bc-0260-4d29-bb88-bd95a3140687.png">
+## Features 
+- App can be accessed with an existing Google account
+- User can create, read, update and delete their own team member cards
+- User can search existing cards
+- User can view their user profile page
 
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Relevant Links <!-- Link to all the things that are required outside of the ones that have their own section -->
+- [Check out the deployed site](https://main--vocabyoulary-mc.netlify.app/)
 
-**NOTES:** 
-- If you see the following error, you did not follow all the setup steps correctly and failed to add your Firebase creds. Go back and do that NOW.
+## Project Screenshots <!-- These can be inside of your project. Look at the repos from class and see how the images are included in the readme -->
+<img width="1428" alt="Screenshot 2023-07-27 at 3 49 36 PM" src="https://github.com/marcelcao/Team-Roster/assets/123406421/f1877cba-85e9-4787-bd5b-813f9d92a5d0">
+<img width="1416" alt="Screenshot 2023-07-27 at 3 49 48 PM" src="https://github.com/marcelcao/Team-Roster/assets/123406421/de32b311-5c7e-45dc-aa42-cf6db6bb4606">
+<img width="1413" alt="Screenshot 2023-07-27 at 3 49 57 PM" src="https://github.com/marcelcao/Team-Roster/assets/123406421/5b6f0d36-ed0d-4d08-ac1a-f4edfab6eb06">
 
-<img width="1043" alt="Screen Shot 2022-07-06 at 11 18 45 AM" src="https://user-images.githubusercontent.com/29741570/177612501-c2628f18-4bbd-4de9-aae6-27ffba1172d6.png">
 
-### Using Axios
-> For every file you will need to make an XHR request in, you will need to require Axios
-```js
-import axios from 'axios';
 
-const examplePromise = () => {
-  axios.get('http://localhost:3001/example')
-    .then((data) => {
-      console.warn(data);
-    })
-    .catch((error) => {
-      console.error(error);
-    });
-});
-```
 
-### Deploying on Netlify
-Netlify will automatically detect your project and prepopulate the settings, but should something go wrong and it does not, here are the commands:
-
-- Build Command: `npm run build`
-- Publish directory: `.next`
-
-#### Additional Steps to Take on Netlify
-- Add Environmental Variables
-    - Any Enviromental variables you are using in your `.env` file should be added to Netlify. 
-        - Go to Site settings > Build & deploy > Environment > Environment variables and the keys and values there.
-
-- Update Firebase URL Settings
-    - In Firebase under Authentication select sign in methods, scroll to Authorized domains. Add your Netlify URL.
-        
-## Learn More about Next.js
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributors
+- Mara Caoile (https://github.com/marcelcao)
