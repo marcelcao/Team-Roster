@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+/* eslint-disable @next/next/no-img-element */
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/globals.css';
 import { AuthProvider } from '../utils/context/authContext';

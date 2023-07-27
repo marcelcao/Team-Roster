@@ -24,7 +24,7 @@ export default function SearchBar({ onKeyUp }) {
             className="form-control"
             id="search"
             name="search"
-            placeholder="Search Members here"
+            placeholder="search members here"
             onChange={handleChange}
             type="text"
             // value={memberQuery}

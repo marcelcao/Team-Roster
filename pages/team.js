@@ -31,9 +31,11 @@ export default function Team() {
   return (
     <div>
       <SearchBar onKeyUp={(query) => filterResult(query)} />
-      <Link href="/members/newMember" passHref>
-        <Button>Add Member</Button>
-      </Link>
+      <div className="member-button">
+        <Link href="/members/newMember" passHref>
+          <Button className="add-member">Add Member</Button>
+        </Link>
+      </div>
       <div className="teams">
         {members.map((member) => (
           <MemberCard key={member.firebaseKey} memberObj={member} onUpdate={getAllMembers} />

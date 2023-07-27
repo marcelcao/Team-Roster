@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import { signIn } from '../utils/auth';
@@ -6,6 +7,7 @@ function Signin() {
   return (
     <div>
       <div className="home-nav">
+        <img src="/logoTR.png" alt="icon" className="main-logo" />
         <Button type="button" size="lg" className="copy-btn" onClick={signIn}>Sign In</Button>
       </div>
       <div className="home-splash">
