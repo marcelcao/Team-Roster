@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import {
-  Navbar, Container, Nav,
+  Navbar, Container, Nav, NavbarBrand,
 } from 'react-bootstrap';
 import { useAuth } from '../utils/context/authContext';
 import SignOut from './SignOut';
@@ -15,7 +15,9 @@ export default function NavBar() {
     <Navbar collapseOnSelect expand="lg" className="nav">
       <Container>
         <Link passHref href="/">
-          <Navbar.Brand>TEAM ROSTER</Navbar.Brand>
+          <NavbarBrand>
+            <img src="/logoTR.png" alt="icon" className="nav-logo" />
+          </NavbarBrand>
         </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -25,7 +27,7 @@ export default function NavBar() {
         </Navbar.Collapse>
         <div id="user-profile">
           <Link passHref href="/userProfile">
-            <img src={user.photoURL} alt="user" width="100rem" height="100rem" />
+            <img src={user.photoURL} alt="user" className="nav-photo" />
           </Link>
         </div>
         <div id="signout-btn">

@@ -25,13 +25,16 @@ body {
 .nav {
   background-color: #f0f9f6;
   color: #3b3b3b;
+  margin-top: 2rem;
 }
 
 .home-nav {
   margin-bottom: 6rem;
   margin-top: 2rem;
   margin-right: 2rem;
-  text-align: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .home-splash {
@@ -132,6 +135,7 @@ h2 {
 
 .option-box-1:hover {
   background-color: #ff8b8b;
+  cursor: pointer;
 }
 
 .option-box-2 {
@@ -156,6 +160,7 @@ h2 {
 
 .option-box-2:hover {
   background-color: #ff8b8b;
+  cursor: pointer;
 }
 
 .index-h3 {
@@ -227,4 +232,90 @@ h2 {
 
 .search {
   text-align: right;
+}
+
+.nav-logo {
+  height: 2rem;
+}
+
+.nav-photo {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 10rem;
+  border: solid #3a3a3a;
+  border-width: .2px;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.main-logo {
+  height: 2rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.user-page {
+  margin-top: 2rem;
+  background-color: rgba(211, 211, 211, 0.248);
+  padding: 6rem;
+  text-align: center;
+}
+
+.user-display-photo {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 10rem;
+  border: solid #3a3a3a;
+  border-width: .2px;
+}
+
+.user-info {
+  font-size: large;
+}
+
+.infos {
+  margin-top: 1rem;
+}
+
+.add-member {
+  background-color: #dedcdca8;
+  border: solid #3a3a3a;
+  border-width: .5px;
+  color: #3a3a3a;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.member-button {
+  text-align: center;
+}
+
+.add-member:hover {
+  background-color: rgb(211, 35, 29);
+}
+
+.form-label {
+  color: rgb(211, 35, 29);
+  margin-top: 2rem;
+}
+
+.submit-btn {
+  background-color: #dedcdca8;
+  border: solid #3a3a3a;
+  border-width: .5px;
+  color: #3a3a3a;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+.submit-btn:hover {
+  background-color: rgb(211, 35, 29);
+}
+
+.submit-contain {
+  text-align: right;
+}
+
+.container {
+  text-align: center;
 }
