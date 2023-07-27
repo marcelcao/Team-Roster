@@ -8,7 +8,7 @@ import SignOut from './SignOut';
 
 export default function NavBar() {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar collapseOnSelect expand="lg" className="nav">
       <Container>
         <Link passHref href="/">
           <Navbar.Brand>TEAM ROSTER</Navbar.Brand>
@@ -17,18 +17,11 @@ export default function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             {/* CLOSE NAVBAR ON LINK SELECTION: https://stackoverflow.com/questions/72813635/collapse-on-select-react-bootstrap-navbar-with-nextjs-not-working */}
-            <Link passHref href="/">
-              <Nav.Link>Home</Nav.Link>
-            </Link>
-            <Link passHref href="/team">
-              <Nav.Link>View Team</Nav.Link>
-            </Link>
-            <Link passHref href="/members/newMember">
-              <Nav.Link>Add Member</Nav.Link>
-            </Link>
-            <SignOut />
           </Nav>
         </Navbar.Collapse>
+        <div id="signout-btn">
+          <SignOut />
+        </div>
       </Container>
     </Navbar>
   );

@@ -18,5 +18,213 @@ a {
 }
 
 body {
-  background-color: #88effd;
+  background-color: #f0f9f6;
+  color: #3b3b3b;
+}
+
+.nav {
+  background-color: #f0f9f6;
+  color: #3b3b3b;
+}
+
+.home-nav {
+  margin-bottom: 6rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  text-align: right;
+}
+
+.home-splash {
+  margin-bottom: 4rem;
+  padding: 8rem;
+  color: rgb(211, 35, 29);
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: rgb(211, 35, 29);
+  position: relative;
+}
+
+.home-splash::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: .35;
+  background-image: url("https://images.unsplash.com/photo-1475506631979-72412c606f4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80");
+}
+
+.home-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border: 2px, solid, black;
+}
+
+h4 {
+  font-size: medium;
+  color: rgb(95, 95, 95);
+}
+
+h1 {
+  font-size: 4rem;
+  isolation: isolate;
+}
+
+h2 {
+  isolation: isolate;
+}
+
+.copy-btn {
+  background-color: rgb(211, 35, 29);
+  border-color: rgb(211, 35, 29);;
+}
+
+.copy-btn:hover {
+  background-color: rgb(114, 22, 19);
+  border-color: rgb(114, 22, 19);
+}
+
+.username {
+  color:rgb(211, 35, 29);
+}
+
+.index {
+  margin-top: 6rem;
+  background-color: rgba(211, 211, 211, 0.248);
+  padding: 6rem;
+}
+
+#signout-btn {
+  text-align: right;
+}
+
+.options {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.option-box-1 {
+  padding: 8rem;
+  position: relative;
+  border: solid #b9b9b9;
+  border-width: .1px;
+}
+
+.option-box-1::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: .25;
+  background-image: url("https://images.unsplash.com/photo-1475506631979-72412c606f4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+  background-size: cover;
+  background-position: 19%;
+}
+
+.option-box-1:hover {
+  background-color: #ff8b8b;
+}
+
+.option-box-2 {
+  padding: 7rem;
+  position: relative;
+  border: solid #b9b9b9;
+  border-width: .1px;
+}
+
+.option-box-2::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: .25;
+  background-image: url("https://images.unsplash.com/photo-1511171699707-c844a5cfb6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80");
+  background-size: cover;
+  background-position: 36%;
+}
+
+.option-box-2:hover {
+  background-color: #ff8b8b;
+}
+
+.index-h3 {
+  isolation: isolate;
+  color: rgb(57, 57, 57);
+  -webkit-text-stroke-width: 1.25px;
+  -webkit-text-stroke-color: rgb(57, 57, 57);
+}
+
+.teams {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.member-img {
+  border-radius: 80%;
+  width: 8rem;
+  height: 8rem;
+  margin-left: 4.5rem;
+  margin-top: 2rem;
+  border: solid #3a3a3a;
+  border-width: .5px;
+}
+
+.team-card {
+  background-color: #dedcdca8;
+  text-align: center;
+}
+
+.card-edit {
+  background-color: #dedcdca8;
+  border: solid #3a3a3a;
+  border-width: .5px;
+  color: #3a3a3a;
+  font-size: .75rem;
+  margin-right: .5rem;
+  margin-top: .25rem;
+}
+
+.card-delete {
+  background-color: #dedcdca8;
+  border: solid #3a3a3a;
+  border-width: .5px;
+  color: #3a3a3a;
+  font-size: .75rem;
+  margin-left: .5rem;
+  margin-top: .25rem;
+}
+
+.role {
+  font-size: medium;
+  font-style: italic;
+}
+
+.card-delete:hover {
+  background-color: rgb(211, 35, 29);
+}
+
+.card-edit:hover {
+  background-color: rgb(211, 35, 29);
+}
+
+.search-box {
+  margin-top: 3rem;
+  width: 20rem;
+}
+
+.search {
+  text-align: right;
 }

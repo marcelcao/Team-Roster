@@ -15,17 +15,16 @@ export default function MemberCard({ memberObj, onUpdate }) {
   };
 
   return (
-    <Card style={{ width: '18rem', margin: '10px' }}>
-      <Card.Img variant="top" src={memberObj.image} alt={memberObj.firstName} style={{ height: '400px' }} />
+    <Card style={{ width: '18rem', margin: '10px' }} className="team-card">
+      <Card.Img variant="top" src={memberObj.image} alt={memberObj.firstName} style={{ height: '8em' }} className="member-img" />
       <Card.Body>
-        <Card.Title>{memberObj.firstName}</Card.Title>
-        <Card.Title>{memberObj.lastName}</Card.Title>
-        <Card.Title>{memberObj.role}</Card.Title>
+        <Card.Title>{memberObj.firstName} {memberObj.lastName}</Card.Title>
+        <Card.Title className="role">{memberObj.role}</Card.Title>
         {/* DYNAMIC LINK TO EDIT THE MEMBER DETAILS  */}
         <Link href={`/members/edit/${memberObj.firebaseKey}`} passHref>
-          <Button variant="info">EDIT</Button>
+          <Button className="card-edit">EDIT</Button>
         </Link>
-        <Button variant="danger" onClick={deleteThisMember} className="m-2">
+        <Button onClick={deleteThisMember} className="card-delete">
           DELETE
         </Button>
       </Card.Body>
