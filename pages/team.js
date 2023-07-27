@@ -34,7 +34,7 @@ export default function Team() {
       <Link href="/members/newMember" passHref>
         <Button>Add Member</Button>
       </Link>
-      <div>
+      <div className="teams">
         {members.map((member) => (
           <MemberCard key={member.firebaseKey} memberObj={member} onUpdate={getAllMembers} />
         ))}
