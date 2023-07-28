@@ -13,7 +13,7 @@
 
 
 ## Relevant Links <!-- Link to all the things that are required outside of the ones that have their own section -->
-- [Check out the deployed site](https://main--vocabyoulary-mc.netlify.app/)
+- [Check out the deployed site]((https://team-roster-marcelcao.netlify.app))
 
 ## Project Screenshots <!-- These can be inside of your project. Look at the repos from class and see how the images are included in the readme -->
 <img width="1428" alt="Screenshot 2023-07-27 at 3 49 36 PM" src="https://github.com/marcelcao/Team-Roster/assets/123406421/f1877cba-85e9-4787-bd5b-813f9d92a5d0">
